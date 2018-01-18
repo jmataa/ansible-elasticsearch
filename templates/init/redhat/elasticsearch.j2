@@ -69,7 +69,7 @@ exec="$ES_HOME/bin/elasticsearch"
 prog="{{es_instance_name}}_{{default_file | basename}}"
 pidfile="$PID_DIR/${prog}.pid"
 
-export ES_PATH_CONF: "{{ conf_dir }}"
+export ES_PATH_CONF="{{ conf_dir }}"
 export ES_JAVA_OPTS
 export JAVA_HOME
 export ES_INCLUDE
